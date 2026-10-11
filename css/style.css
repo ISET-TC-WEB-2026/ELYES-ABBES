@@ -151,16 +151,16 @@ h3{
 
 @font-face{
     font-family: 'CuteFont';
-    src: url('../rada-cenak-trial/Rada\ Cenak\ Trial.otf') format('opentype');
+    src: url('../Fonts/rada-cenak-trial/Rada\ Cenak\ Trial.otf') format('opentype');
     font-display: swap;
 }
 @font-face {
     font-family: 'CuteFont2';
-    src: url(../matcha_world/Matcha\ World.otf);
+    src: url('Fonts/matcha_world/Matcha\ World.otf');
 }
 @font-face {
     font-family: 'Ames';
-    src: url(../ames/Ames-Regular.otf) format('opentype');
+    src: url('../Fonts/ames/Ames-Regular.otf') format('opentype');
 }
 #divintro{
     padding-right: 500px;
