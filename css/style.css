@@ -1,0 +1,218 @@
+
+.vidsec video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.content{
+    position: relative;
+    z-index: 2;
+    background: var(--cream);
+    border-radius: 50px;
+}
+.intro{
+    position: relative;
+    padding: 110px 8% 40px;
+    border-radius: 30px 30px 0 0;
+    min-height: 400px;
+    background-color: #3b2f2a;
+    bottom: 0%;
+    height: fit-content;
+    border-radius: 50px;
+}
+#girl{
+    position: absolute;
+    top: -400px;
+    right: -150px;
+
+    
+}
+.start{
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 10px rgba(0,0,0,.6)
+}
+header{
+    position: sticky;             
+    top: 0;                       
+    z-index: 10;                  
+    display: flex;
+    align-items: center;          
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 4%;
+    background-color: rgb(233, 221, 206);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .2);
+}
+
+
+#logo1{
+    width: 70px;
+    height: 70px;
+    display: block;
+    transition: .3s;
+}
+#logo1:hover{
+    transform: rotate(-8deg) scale(1.1);
+}
+
+
+.title{
+    order: 3;
+    flex-basis: 100%;
+    text-align: center;
+}
+#wlc{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    font-size: medium;
+}
+h1{
+    font-size: 1.4rem;
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+.links{
+    display: flex;                 
+    align-items: center;
+    gap: 6px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    text-decoration: none;
+    color: #3b2f2a;
+    transition: .2s;
+}
+.links:hover{
+    color: #d9783b;
+}
+#cart{
+    width: 36px;
+    height: 36px;
+}
+@media(min-width:700px){ .girl{ width: 220px; top: -150px; } }
+
+@media (min-width: 800px){
+    .title{
+        order: 0;                  
+        flex: 1;                  
+    }
+    h1{
+        font-size: 2.2rem;
+    }
+}
+footer{
+    width: 100%;
+    background-color:rgb(233, 221, 206) ;
+    font-style: italic;
+    text-align: center;
+    position: fixed;
+    bottom: 0%;
+    z-index: 5;
+}
+h2{
+    text-align: center;
+    color: #b9aba4d5;
+    font-family: 'CuteFont2';
+    font-size: 50px;
+    margin-top: -90px;
+}
+h3{
+    font-size: xx-large;
+    font-style: italic;
+    text-decoration: overline;
+    color: rgb(233, 221, 206);
+}
+#introp {
+    font-size: larger;
+    font-size: 30px;
+    color: aliceblue;
+    font-family: 'CuteFont';
+}
+
+@font-face{
+    font-family: 'CuteFont';
+    src: url('../rada-cenak-trial/Rada\ Cenak\ Trial.otf') format('opentype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'CuteFont2';
+    src: url(../matcha_world/Matcha\ World.otf);
+}
+@font-face {
+    font-family: 'Ames';
+    src: url(../ames/Ames-Regular.otf) format('opentype');
+}
+#divintro{
+    padding-right: 500px;
+    text-align: center;
+    
+}
+.btns{
+    font-family: 'CuteFont';
+    font-size: 30px;
+    text-decoration: none;
+    color: bisque;
+    transition: 2s all ;
+}
+.btns:hover{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.CategorieSec{
+    background-color: #3b2f2a;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block ;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    
+}
+.navPics{
+    height: 150px;
+    width: 150px;
+}
+#CatsNav{
+    gap: 100px;
+    display: flex;
+    text-decoration: none;  
+    justify-content: center;
+}
+#CatsNav a{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'CuteFont2'; 
+    color:#ad9473 ;
+
+}
+.CategorieSec h1 {
+    text-align: center;
+    font-family: 'Ames';
+    color: #ad9473;
+}
+#spread{
+    width:170px;
+    height: 170px;
+}
