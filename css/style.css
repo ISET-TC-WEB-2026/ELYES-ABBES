@@ -237,6 +237,10 @@ h3{
 
 }
 
+#slier{
+    overflow: hidden;
+    position: relative;
+}
 #arrowL{
     display: none;
 }
