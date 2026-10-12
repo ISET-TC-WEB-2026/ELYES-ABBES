@@ -1,4 +1,5 @@
 
+*{user-select: none;}
 .vidsec video{
     position: fixed;
     top: 0;
@@ -218,8 +219,10 @@ h3{
 }
 .slideTrig{display: none;}
 .arrow{
-    position: absolute;
+    position: relative;
+    bottom: -250px;
     top: 50%;
+    right: -1780px;
     transform: translate(50%);
     z-index: 5;
     border: none;
@@ -233,11 +236,28 @@ h3{
     display: flex;
     align-items: center;
     justify-content: center;
-    user-select: none;
-
+    animation: clinch 1s ease-in-out 0S infinite alternate ;
 }
-
-#slier{
+@keyframes clinch {
+    from { transform:  scale(1); }
+    to   { transform: scale(1.3); }
+    
+}
+.slideContent{
+    gap: 500px;
+    display:inline-flex;
+    
+}
+.proSli{
+    color: #fff;
+    position: relative;
+    right: -150px;
+    border: black solid 1px;
+    width: 550px;
+    height: 400px;
+    text-align: center;
+}
+#slider{
     overflow: hidden;
     position: relative;
 }
