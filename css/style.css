@@ -137,7 +137,7 @@ h2{
     color: #b9aba4d5;
     font-family: 'CuteFont2';
     font-size: 50px;
-    margin-top: -90px;
+    
 }
 h3{
     font-size: xx-large;
@@ -168,6 +168,7 @@ h3{
 #divintro{
     padding-right: 500px;
     text-align: center;
+    padding: -10% 50px ;
     
 }
 .btns{
@@ -221,40 +222,47 @@ h3{
 }
 .slideTrig{display: none;}
 .arrow{
-    position: relative;
-    bottom: -250px;
+    position: absolute;
     top: 50%;
-    right: -1780px;
-    transform: translate(50%);
+    transform: translateY(-50%);
     z-index: 5;
     border: none;
-    background-color: bisque;
+    background-color: rgb(66, 66, 65);
     color: #fff;
     font-size:30px ;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     cursor: pointer;
-    display: flex;
     align-items: center;
     justify-content: center;
     animation: clinch 1s ease-in-out 0S infinite alternate ;
 }
 @keyframes clinch {
-    from { transform: scale(1); }
-    to   { transform: scale(1.2); }
+    from { transform: translateY(-50%) scale(1); }
+    to   { transform: translateY(-50%) scale(1.2); }
     
 }
+#arrowR{right: 20px;}
+#arrowL{left: 20px;}
 .slideContent{
-    gap: 500px;
-    display:inline-flex;
+    gap: 50px;
+    display:flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0px 90px;
+    scroll-padding: 0 90px;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    
+
     
 }
 .proSli{
     color: #fff;
+    flex: 0 0 550px;
+    scroll-snap-align: start;
     position: relative;
-    right: -150px;
-    border: black solid 1px;
     width: 550px;
     height: 400px;
     text-align: center;
@@ -262,15 +270,13 @@ h3{
 #slider{
     overflow: hidden;
     position: relative;
-}
-#arrowL{
-    display: none;
-}
-#slideTrig:checked ~ .slideContent{transform: translateX(300px);}
-#slideTrig:checked ~ #arrowR{display:none;}
-#slideTrig:checked ~ #arrowL{display:flex;}
+    padding: 20px 0;
 
-
-html{
-    overflow-x: hidden;
+}
+#h2P{
+    color: #3b2f2a;
+    font-style: italic;
+}
+.navP{
+    
 }
